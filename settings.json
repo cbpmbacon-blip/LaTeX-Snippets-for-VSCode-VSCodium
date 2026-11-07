@@ -1,0 +1,23 @@
+[{
+  "editor.tabCompletion": "onlySnippets",
+  "editor.acceptSuggestionOnEnter": "off"
+},
+{
+    "python-envs.pythonProjects": [
+        {
+            "path": "test.py",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ],
+    "cSpell.words": [
+        "linearization",
+        "overassumptions"
+    ]
+},    
+
+"[latex]", {
+       "editor.quickSuggestions": { "other": true, "comments": false, "strings": true },
+       "editor.suggest.snippetsPreventQuickSuggestions": false
+   }
+]

@@ -1,0 +1,168 @@
+{
+	// Place your snippets for LaTeX here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	//
+	// You can also restrict snippets to specific files using include/exclude patterns:
+	// "Test snippet": {
+	// 	"prefix": "test",
+	// 	"body": "test('$1', () => {\n\t$0\n});",
+	// 	"include": ["**/*.test.ts", "*.spec.ts"],
+	// 	"exclude": ["**/temp/*.ts"],
+	// 	"description": "Insert test block"
+	// }
+
+	"fraction": {
+		"prefix": "frac",
+		"body": [
+			"\\\\frac{$1}{$2}$0"
+		],
+		"description": "fraction"
+	},
+	"inline math":{
+		"prefix": "mk",
+		"body": [
+			"\\\\($1\\\\)$0"
+		],
+		"description": "inline math"
+	},
+	"display math":{
+		"prefix": "dm",
+		"body": [
+			"\\\\[$1\\\\]$0"
+		]
+	},
+	"align star":{
+		"prefix": "ali",
+		"body": [
+			"\\\\begin{align*}",
+			"$1",
+			"\\\\end{align*}$0"
+		],
+	},
+	"preamble": {
+		"prefix": "preamb",
+		"description": "math/physics preamble",
+		"body": [
+			"\\\\documentclass{article}",
+			"",
+			"% SPACING AND FORMATTING ======================",
+			"",
+			"\\\\usepackage[margin=0.75in]{geometry}",
+			"\\\\usepackage[T1]{fontenc}",
+			"\\\\usepackage{setspace}",
+			"\\\\setstretch{1.25}",
+			"\\\\usepackage{lmodern}",
+			"\\\\usepackage{microtype}",
+			"\\\\usepackage{parskip}",
+			"\\\\usepackage{fancyhdr}",
+			"\\\\pagestyle{fancy}",
+			"\\\\usepackage{booktabs}",
+			"",
+			"% MATH, PHYSICS, AND GRAPHS ======================",
+			"",
+			"\\\\usepackage{mathtools}",
+			"\\\\usepackage{amssymb}",
+			"\\\\usepackage{amsthm}",
+			"\\\\usepackage{centernot}",
+			"\\\\usepackage{siunitx}",
+			"\\\\usepackage{enumitem}",
+			"\\\\usepackage{xcolor}",
+			"\\\\usepackage{tikz}",
+			"\\\\usepackage{pgfplots}",
+			"\\\\pgfplotsset{compat=1.18}",
+			"\\\\usetikzlibrary{angles, quotes}",
+			"",
+			"% REFERENCES ======================",
+			"",
+			"\\\\usepackage{hyperref}",
+			"\\\\usepackage{cleveref}",
+			"",
+			"% HEADINGS ======================",
+			"",
+			"\\\\fancyhead[L]{Jay Reddy}",
+			"\\\\fancyhead[C]{Michigan State Univeristy}",
+			"\\\\fancyhead[R]{$1} % CLASS",
+			"",
+			"% DOCUMENT ====================",
+			"",
+			"\\\\begin{document}",
+			"",
+			"% TITLE ====================",
+			"",
+			"\\\\begin{center}",
+			"    {\\\\Large{\\\\textbf{$2}}}\\\\\\\\ % TITLE",
+			"\\\\end{center}",
+			"",
+			"$0",
+			"",
+			"\\\\end{document}"
+		]
+	},
+	"enumerate":{
+		"prefix": "enum",
+		"body": [
+			"\\\\begin{enumerate}",
+			"$1",
+			"\\\\end{enumerate}",
+		]
+	},
+	"logic and":{
+		"prefix": "and",
+		"body": [
+			"\\\\land"
+		]
+	},
+	"logic or":{
+		"prefix": "or",
+		"body": [
+			"\\\\lor"
+		]
+	},
+	"math blackboard": {
+		"prefix": "mb",
+		"body": [
+			"\\\\mathbb{$1}$0"
+		]
+	},
+	"subset equivalent": {
+		"prefix": "subeq",
+		"body": [
+			"\\\\subseteq"
+		]
+	},
+	"partial derivative": {
+		"prefix": "par",
+		"body": [
+			"\\\\partial"
+		]
+	},
+	"bounded sum": {
+		"prefix": "bsum",
+		"body": [
+			"\\\\sum_{$1}^{$2}$0"
+		]
+	},
+	"bounded integral": {
+		"prefix": "bint",
+		"body": [
+			"\\\\int_{$1}^{$2}$0"
+		]
+	},
+	"vector": {
+		"prefix": "vec",
+		"body": [
+			"\\\\vec{$1}$0"
+		]
+	}
+}
